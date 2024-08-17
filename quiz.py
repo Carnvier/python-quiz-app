@@ -9,8 +9,8 @@ answers = ['EMMERSON MNANGAGWA',
            'NYANGA', 
            'shona', 
            'four', 
-           'VICTORIAL FALLS']
-answer =  ''
+           'VICTORIA FALLS']
+answer =  str
 print('Hello welcome to our quiz game')
 
 confirm = input('Would you want to play the game? (y/n): ')
@@ -26,9 +26,9 @@ if confirm == 'y':
             count += 1
         else:
             print('Wrong answer')
+            print(answers[count].upper())
             count += 1
-            print(answers.upper())
-
+            
     print(f'Well done your scored {score} points! Out of {str(count)}')
     print(f'You got {(score / count)*100}%')
 

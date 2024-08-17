@@ -1,6 +1,6 @@
 import random
 guesses =  0
-user_num = input('Type in a randomm number: ')
+user_num = input('Type in a random number: ')
 
 user_num = int(user_num)
 random = random.randint(0, user_num)
